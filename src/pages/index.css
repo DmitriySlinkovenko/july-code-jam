@@ -1,0 +1,16 @@
+@import url(../blocks/Card/Card.css);
+@import url(../blocks/Header/Header.css);
+@import url(../blocks/Main/Main.css);
+@import url(../blocks/About/About.css);
+@import url(../blocks/Footer/Footer.css);
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  flex-direction: column;
+  background-color: rgb(25, 92, 194);
+  color: white;
+  font-size: 1.5rem;
+}
