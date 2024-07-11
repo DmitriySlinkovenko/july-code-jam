@@ -1,0 +1,16 @@
+.card__container {
+  max-width: 1440px;
+  margin: 30px 0 0;
+  display: flex;
+  gap: 16px;
+}
+
+.section__container {
+  margin-top: 50px;
+}
+
+.section__heading {
+  background-image: url(../src/assets/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
+  height: 250px;
+  width: 1440px;
+}

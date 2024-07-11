@@ -1,6 +1,6 @@
 import React from "react";
 import "./Main.css";
-import placeholder from "../../assets/No-Image-Placeholder.svg.png";
+import Card from "../Card/Card";
 
 export default function Main() {
   return (
@@ -22,24 +22,10 @@ export default function Main() {
         <div className="section__container">
           <p>Main card section</p>
           <div className="card__container">
-            <div className="card">
-              <img src={placeholder} alt="" className="card__image" />
-              <div className="card__info">
-                <p className="card__heading">Cocktail Name</p>
-              </div>
-            </div>
-            <div className="card">
-              <img src={placeholder} alt="" className="card__image" />
-              <div className="card__info">
-                <p className="card__heading">Cocktail Name</p>
-              </div>
-            </div>
-            <div className="card">
-              <img src={placeholder} alt="" className="card__image" />
-              <div className="card__info">
-                <p className="card__heading">Cocktail Name</p>
-              </div>
-            </div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
         </div>
       </section>
