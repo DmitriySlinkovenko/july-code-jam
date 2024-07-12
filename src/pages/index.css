@@ -3,6 +3,8 @@
 @import url(../blocks/Main/Main.css);
 @import url(../blocks/About/About.css);
 @import url(../blocks/Footer/Footer.css);
+@import url(../blocks/Modal/Modal.css);
+@import url(../blocks/Form/Form.css);
 
 body {
   margin: 0 auto;
