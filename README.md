@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 # Project: Mixlist
 
-[Github Pages Link](https://yourgithubusername.github.io/july-code-jam/)
+[Github Pages Link](https://yourgithubusername.github.io/mixlist/)
 
 # Overview
 
@@ -27,14 +27,13 @@ Currently, two official plugins are available:
 
 ## Intro
 
-"Mixlist" is an interactive web platform where users can discover, share, and create cocktail recipes. The app allows users to explore various drinks, view detailed recipes, and contribute their own unique creations.
+"Mixlist" is an interactive web platform where users can discover and create cocktail recipes. The app allows users to explore various drinks and view detailed recipes through interactive recipe cards that flip to reveal more information.
 
 ## Features
 
 - **Recipe Cards:** Each card displays a drink image and name on the front. Clicking the card flips it over to reveal the recipe.
 - **Recipe Sharing:** Users can submit their own cocktail recipes.
-- **Favorites System:** Users can mark recipes as favorites for easy access.
-- **Profile Customization:** Users can personalize their profiles with information and avatars.
+- **Database Integration:** The app pulls from a database of original cocktail recipes that persist and don't disappear on page reload.
 
 ## Responsive Design
 
@@ -50,14 +49,14 @@ In "Mixlist", JavaScript ES6 is used to create an immersive and interactive expe
 
 - **Dynamic Content Creation:** Using `document.createElement()` and template literals to build and insert content into the DOM.
 - **Event Handling:** Adding event listeners to handle clicks, form submissions, and other user interactions, such as flipping cards to reveal recipes.
-- **DOM Manipulation:** Dynamically updating the DOM in response to user actions, like submitting new recipes and marking favorites.
-- **Modal Management:** Controlling the opening and closing of modals for submitting new recipes, providing an engaging user interface without navigating away from the main page.
+- **DOM Manipulation:** Dynamically updating the DOM in response to user actions, like submitting new recipes.
+- **Database Integration:** Fetching initial set of cocktail recipes from a database that ensures data persistence across page reloads.
 
 ## Technologies Used
 
 - HTML5 for structured web content
 - CSS3 for modern web styling
-- JavaScript (ES6, DOM manipulation, event handling, and form validation)
+- JavaScript (ES6, DOM manipulation, event handling)
 - Webpack for module bundling
 - Git and GitHub for version control
 - Figma for design mockups
