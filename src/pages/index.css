@@ -10,7 +10,19 @@ body {
   justify-content: center;
   max-width: 1440px;
   flex-direction: column;
-  background-color: rgb(25, 92, 194);
-  color: white;
+  background: rgb(243, 235, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(243, 235, 18, 1) 0%,
+    rgba(245, 235, 16, 1) 5%,
+    rgba(0, 212, 255, 1) 41%
+  );
+  color: rgb(255, 242, 242);
   font-size: 1.5rem;
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
 }
