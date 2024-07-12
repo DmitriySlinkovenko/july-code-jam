@@ -49,12 +49,40 @@
         <div class="section__container">
           <p>Main card section</p>
           <div class="card__container">
-            <div class="card">
-              <img src="{placeholder}" alt="" class="card__image" />
-              <div class="card__info">
-                <p class="card__heading">Cocktail Name</p>
+            <div class="card" id="card">
+              <div class="card__inner">
+                <div class="card__front">
+                  <img src="" alt="" class="card__image" />
+                  <h2 class="card__title"></h2>
+                </div>
+                <div class="card__back">
+                  <h2 class="card__title">Placeholder Title</h2>
+                  <p class="">Ingredient Placeholder</p>
+                  <p class="">Ingredient Placeholder</p>
+                  <p class="">Ingredient Placeholder</p>
+                  <p class="">Ingredient Placeholder</p>
+                  <button
+                    class="card__like-button"
+                    id="like-button"
+                    type="button"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="card__back_1">
+                <h2 class="card__title">Placeholder Title</h2>
+                <p class="">Ingredient Placeholder</p>
+                <p class="">Ingredient Placeholder</p>
+                <p class="">Ingredient Placeholder</p>
+                <p class="">Ingredient Placeholder</p>
+                <button
+                  class="card__like-button"
+                  id="like-button"
+                  type="button"
+                ></button>
               </div>
             </div>
+
             <div class="card">
               <img src="{placeholder}" alt="" class="card__image" />
               <div class="card__info">
@@ -111,21 +139,29 @@
     </footer>
 
     <!-- <template class="card__template" id="card-template">
-      <div class="card">
-        <img src="" alt="" class="card__image" />
-        <div class="card__info">
-          <h2 class="card__title"></h2>
-          <button
-            class="card__like-button"
-            id="like-button"
-            type="button"
-          ></button>
-          <button class="card__remove-button" type="button"></button>
+      <div class="card" id="card">
+        <div class="card__inner">
+          <div class="card__front">
+            <img src="" alt="" class="card__image" />
+            <h2 class="card__title"></h2>
+          </div>
+          <div class="card__back">
+            <h2 class="card__title">Placeholder Title</h2>
+            <p class="">Ingredient Placeholder</p>
+            <p class="">Ingredient Placeholder</p>
+            <p class="">Ingredient Placeholder</p>
+            <p class="">Ingredient Placeholder</p>
+            <button
+              class="card__like-button"
+              id="like-button"
+              type="button"
+            ></button>
+          </div>
         </div>
       </div>
     </template> -->
 
-    <div class="modal modal_opened" id="add-card__modal">
+    <div class="modal" id="add-card__modal">
       <div class="modal__container">
         <button class="modal__close-button" type="button"></button>
         <h2 class="modal__heading">New Recipe</h2>
@@ -145,6 +181,16 @@
               required
               minlength="1"
               maxlength="20"
+            />
+          </label>
+          <label class="form__label"
+            ><input
+              type="text"
+              class="form__input"
+              id="input__cocktail_image"
+              name="image"
+              placeholder="Image Link"
+              required
             />
           </label>
 
