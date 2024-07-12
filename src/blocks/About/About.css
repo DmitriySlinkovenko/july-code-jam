@@ -1,0 +1,35 @@
+.about__section {
+  margin-bottom: 50px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.about__card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 350px;
+  width: 250px;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.about__text {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: black;
+}
+
+.about__image {
+  background-color: black;
+  border-radius: 50%;
+  margin: 10px 0 0;
+  object-fit: cover;
+  width: 30%;
+  height: 15%;
+}
