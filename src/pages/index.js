@@ -1,7 +1,6 @@
 import "../pages/index.css";
 import Api from "../components/Api";
 import Card from "../components/Card";
-import ModalWithForm from "../components/ModalWithForm";
 import Section from "../components/Section";
 
 const api = new Api({
