@@ -13,16 +13,10 @@ class Api {
     return Promise.reject(`Error: ${res.status}`);
   }
 
-  async _request(endpoint, options = {}) {
-    const res = await fetch(`${this._baseUrl}${endpoint}`, {
-      ...options,
-      headers: this._headers,
-    });
-    return this._checkResponse(res);
-  }
-
   async getInitialCards() {
-    return this._request("/cards");
+    return fetch(`${baseUrl}/randomselection.php`).then((res) =>
+      this._checkResponse(res)
+    );
   }
 
   async addCard({

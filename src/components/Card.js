@@ -1,17 +1,15 @@
 class Card {
   constructor(data, templateSelector, handleLike) {
-    this._title = data.title;
-    this._imageLink = data.imageLink;
+    this._title = data.title || data.strDrink;
+    this._imageLink = data.imageLink || data.strDrinkThumb;
     this._templateSelector = templateSelector;
-    this._id = data._id;
+    this._id = data._id || data.idDrink;
     this._handleLike = handleLike;
     this._isLiked = data.isLiked;
-    this._ingr1 = data.ingredient1;
-    this._ingr2 = data.ingredient2;
-    this._ingr3 = data.ingredient3;
-    this._ingr4 = data.ingredient4;
-    this._ingr5 = data.ingredient5;
-    this._ingr6 = data.ingredient6;
+    this._ingr1 = data.ingredient1 || data.strIngredient1;
+    this._ingr2 = data.ingredient2 || data.strIngredient2;
+    this._ingr3 = data.ingredient3 || data.strIngredient3;
+    this._ingr4 = data.ingredient4 || data.strIngredient4;
   }
 
   _setEventListeners() {
@@ -46,7 +44,6 @@ class Card {
     const cardElement = document
       .querySelector(this._templateSelector)
       .content.firstElementChild.cloneNode(true);
-
     return cardElement;
   }
 
@@ -58,8 +55,6 @@ class Card {
     this._ing2 = this._element.querySelector("#ingr2");
     this._ing3 = this._element.querySelector("#ingr3");
     this._ing4 = this._element.querySelector("#ingr4");
-    this._ing5 = this._element.querySelector("#ingr5");
-    this._ing6 = this._element.querySelector("#ingr6");
     this._cardImage.src = this._imageLink;
     this._cardTitle.textContent = this._title;
     this._cardImage.alt = this._title;
@@ -67,8 +62,6 @@ class Card {
     this._ing2.textContent = this._ingr2;
     this._ing3.textContent = this._ingr3;
     this._ing4.textContent = this._ingr4;
-    this._ing5.textContent = this._ingr5;
-    this._ing6.textContent = this._ingr6;
     this._setEventListeners();
     this._renderLikes();
     return this._element;
