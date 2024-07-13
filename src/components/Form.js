@@ -34,4 +34,8 @@ export default class AddCardForm {
       this.handleAddFormSubmit(_getInputValues());
     });
   }
+
+  resetForm() {
+    this.formModal.reset();
+  }
 }

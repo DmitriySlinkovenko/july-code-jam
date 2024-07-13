@@ -61,5 +61,6 @@ function handleAddFormSubmit() {
     .then((data) => {
       const newCard = createCard(data);
       cardSection.addItem(newCard);
+      addForm.resetForm();
     });
 }
