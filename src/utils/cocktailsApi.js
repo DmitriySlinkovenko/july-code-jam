@@ -21,6 +21,35 @@ class Api {
     return this._checkResponse(res);
   }
 
+  async getInitialCards() {
+    return this._request("/cards");
+  }
+
+  async addCard({
+    title,
+    imageLink,
+    ingredient1,
+    ingredient2,
+    ingredient3,
+    ingredient4,
+    ingredient5,
+    ingredient6,
+  }) {
+    return this._request("/items", {
+      method: "POST",
+      body: JSON.stringify({
+        title,
+        imageLink,
+        ingredient1,
+        ingredient2,
+        ingredient3,
+        ingredient4,
+        ingredient5,
+        ingredient6,
+      }),
+    });
+  }
+
   async getRecentCocktails() {
     return this._request("/recent.php");
   }
