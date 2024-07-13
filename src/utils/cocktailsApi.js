@@ -113,7 +113,7 @@ class Api {
 
 // API INIT
 const cocktailApi = new Api({
-  baseUrl: baseUrl,
+  baseUrl: `${baseUrl}`,
   headers: {
     "Content-Type": "application/json",
   },
