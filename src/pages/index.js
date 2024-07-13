@@ -7,7 +7,7 @@ import AddCardForm from "../components/Form";
 const addForm = document.forms[".form"];
 const saveButton = document.querySelector(".form__save-button");
 const addCocktailBtn = document.querySelector(".nav__button");
-const addModal = new AddCardForm("#add-card-modal");
+const addModal = new AddCardForm("#add-card-modal", handleAddFormSubmit);
 
 addCocktailBtn.addEventListener("click", () => {
   addModal.open();

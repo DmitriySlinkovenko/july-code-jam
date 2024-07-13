@@ -1,5 +1,5 @@
 export default class AddCardForm {
-  constructor(formModal) {
+  constructor(formModal, handleAddFormSubmit) {
     this.formModal = document.querySelector(formModal);
     this._closeButton = document.querySelector(".modal__close-button");
   }
