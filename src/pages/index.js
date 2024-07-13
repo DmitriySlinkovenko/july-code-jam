@@ -1,5 +1,5 @@
 import "../pages/index.css";
-import Api from "../components/Api";
+import Api from "../components/CocktailsApi";
 import Card from "../components/Card";
 import Section from "../components/Section";
 import AddCardForm from "../components/Form";

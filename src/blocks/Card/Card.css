@@ -23,6 +23,7 @@
 
 .card:hover .card__inner {
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .card__image {
@@ -66,6 +67,7 @@
 
 .card__like-button:hover {
   background-image: url(../../images/Vectorhover-like.svg);
+  cursor: pointer;
 }
 
 .card__text {
