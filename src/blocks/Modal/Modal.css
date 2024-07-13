@@ -21,7 +21,7 @@
 }
 
 .modal__container {
-  background-color: #f36464;
+  background-color: #32302e;
   display: flex;
   flex-direction: column;
   width: 430px;
@@ -38,6 +38,7 @@
   line-height: 1.2;
   text-align: center;
   height: 23px;
+  color: #ecf0f1;
 }
 
 .modal__close-button {
