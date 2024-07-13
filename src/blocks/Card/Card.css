@@ -18,6 +18,7 @@
 .card__title {
   font-size: 20px;
   line-height: 1.2;
+  margin: 0;
 }
 
 .card:hover .card__inner {
@@ -26,7 +27,8 @@
 
 .card__image {
   width: 300px;
-  height: 200px;
+  height: 250px;
+  border-radius: 15px;
 }
 
 .card__front,
