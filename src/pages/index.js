@@ -27,7 +27,8 @@ function createCard(data) {
 
 let cardSection;
 
-api.getInitialCards
+api
+  .getInitialCards()
   .then((res) => {
     cardSection = new Section(
       {
