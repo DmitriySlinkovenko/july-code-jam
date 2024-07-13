@@ -12,8 +12,8 @@ export default class Api {
   }
 
   getInitialCards() {
-    return fetch(`https://localhost:27017/items`, {
-      headers: { "Content-Type": "application/json" },
+    return fetch(`${this._url}`, {
+      headers: this._header,
     }).then((res) => this._checkResponse(res));
   }
 
