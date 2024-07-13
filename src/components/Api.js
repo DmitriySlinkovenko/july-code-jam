@@ -4,6 +4,10 @@ export default class Api {
     this._header = headers;
   }
 
+  _request(url, options) {
+    return fetch(url, options).then(this._checkResponse);
+  }
+
   _checkResponse(res) {
     if (res.ok) {
       return res.json();
@@ -12,9 +16,9 @@ export default class Api {
   }
 
   getInitialCards() {
-    return fetch(`${this._url}`, {
+    return this._request(`${this._url}`, {
       headers: this._header,
-    }).then((res) => this._checkResponse(res));
+    });
   }
 
   addCard({
@@ -27,7 +31,7 @@ export default class Api {
     ingredient5,
     ingredient6,
   }) {
-    return fetch(`${this._url}/items`, {
+    return this._request(`${this._url}/items`, {
       method: "POST",
       headers: this._header,
       body: JSON.stringify({
@@ -40,13 +44,13 @@ export default class Api {
         ingredient5: ingredient5,
         ingredient6: ingredient6,
       }),
-    }).then((res) => this._checkResponse(res));
+    });
   }
 
   //   likeCard(id) {
-  //     return fetch(`${this._url}/cards/${id}/likes`, {
+  //     return this._request(`${this._url}/cards/${id}/likes`, {
   //       method: "PUT",
   //       headers: this._header,
-  //     }).then((res) => this._checkResponse(res));
+  //     });
   //   }
 }
