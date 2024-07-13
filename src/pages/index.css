@@ -1,3 +1,5 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
 @import url(../blocks/Card/Card.css);
 @import url(../blocks/Header/Header.css);
 @import url(../blocks/Main/Main.css);
@@ -12,14 +14,15 @@ body {
   justify-content: center;
   max-width: 1440px;
   flex-direction: column;
-  background: rgb(243, 235, 18);
+  background: rgba(236, 240, 241, 1);
   background: linear-gradient(
     0deg,
-    rgba(243, 235, 18, 1) 0%,
-    rgba(245, 235, 16, 1) 1%,
-    rgba(0, 212, 255, 1) 11%
+    rgba(236, 240, 241, 1) 0%,
+    rgba(236, 240, 241, 1) 1%,
+    rgba(236, 240, 241, 1) 11%
   );
-  color: rgb(255, 242, 242);
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif, Arial;
   font-size: 1.5rem;
 }
 

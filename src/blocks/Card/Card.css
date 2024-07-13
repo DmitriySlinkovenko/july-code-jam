@@ -3,7 +3,11 @@
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  border-radius: 15px;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .card__inner {
@@ -18,7 +22,12 @@
 .card__title {
   font-size: 20px;
   line-height: 1.2;
-  margin: 0;
+  letter-spacing: 1.5px;
+  margin: 5px 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
 }
 
 .card:hover .card__inner {
@@ -29,7 +38,7 @@
 .card__image {
   width: 300px;
   height: 250px;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .card__front,
@@ -38,11 +47,11 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 15px;
+  border-radius: 0;
 }
 
 .card__front {
-  background-color: #bbb;
+  background-color: #fffefe;
   color: black;
 }
 
@@ -50,6 +59,7 @@
   background-color: white;
   color: black;
   transform: rotateY(180deg);
+  padding-top: 10px;
 }
 
 .card__like-button {
