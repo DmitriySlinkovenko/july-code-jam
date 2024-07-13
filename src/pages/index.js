@@ -12,9 +12,8 @@ const addModal = new AddCardForm("#add-card-modal");
 addCocktailBtn.addEventListener("click", () => {
   addModal.open();
 });
-closeModalBtn.addEventListener("click", () => {
-  addModal.classList.remove("modal_opened");
-});
+
+addModal.setEventListeners();
 
 const api = new Api({
   baseUrl: "https://localhost:27017/items",
