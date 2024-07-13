@@ -1,9 +1,35 @@
 import "../pages/index.css";
+import Api from "../components/Api";
+import Card from "../components/Card";
+import ModalWithForm from "../components/ModalWithForm";
+import Section from "../components/Section";
 
-const card = document.querySelector(".card");
+const api = new Api({
+  baseUrl: "https://localhost:27017/items",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
 
-const cardToggle = () => {
-  card.classList.toggle = "card__animation";
-};
+function createCard(data) {
+  const card = new Card(data, "#card-template", likeButton);
+  return card.generateCard();
+}
 
-card.addEventListener("click", cardToggle);
+let cardSection;
+
+api.getInitialCards
+  .then((cards) => {
+    cardSection = new Section(
+      {
+        items: cards,
+        renderer: (cardData) => {
+          const card = createCard(cardData);
+          cardSection.addItem(card);
+        },
+      },
+      ".card__container"
+    );
+    cardSection.renderItems();
+  })
+  .catch((err) => console.error("Error fetching initial cards", error));
