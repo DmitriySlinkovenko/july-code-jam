@@ -9,6 +9,14 @@
   border-bottom: 1px solid white;
 }
 
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 192px;
+  height: 192px;
+}
+
 .header__nav {
   display: flex;
   flex-direction: row;
