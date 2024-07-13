@@ -19,7 +19,7 @@ export default class AddCardForm {
     const cardData = {};
     this._inputList.forEach((input) => {
       cardData[input.name] = input.value;
-      cardData[input.ingredient] = input.ingredient;
+      cardData[input.ingredient1] = input.value;
     });
 
     return cardData;
