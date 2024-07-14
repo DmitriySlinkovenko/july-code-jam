@@ -1,15 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 # Project: Mixlist
-
-[Github Pages Link](https://yourgithubusername.github.io/mixlist/)
 
 # Overview
 
@@ -79,7 +68,7 @@ The project uses Webpack for bundling JavaScript modules, enabling a cleaner and
 To view the project on your local machine:
 
 1. Clone the public repository using `git clone`.
-2. Open the `index.html` file in a modern web browser to see the project live.
+2. Clone the backend repository from [here]https://github.com/DmitriySlinkovenko/july-code-jam-backend.
 
 ## Contributing
 
@@ -97,13 +86,9 @@ We are committed to continually enhancing the user experience and feature set of
 - **Performance Optimization:** Continue to optimize the site's performance, particularly image loading times, for a smoother user experience.
 - **Accessibility Improvements:** Ensure the site is fully accessible by conducting thorough accessibility audits and addressing any issues to comply with WCAG guidelines.
 
-## Author
+## Authors
 
-Jack Malzone
-
-## License
-
-MIT
+Jack Malzone, Avery Morgan, Telasja Reynolds, Dmitriy Slinkovenko
 
 ## Acknowledgements
 
