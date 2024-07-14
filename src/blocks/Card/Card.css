@@ -186,3 +186,8 @@
     transform: translateX(-50%);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .card__container {
+  }
+}
