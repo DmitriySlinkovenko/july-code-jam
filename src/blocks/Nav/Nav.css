@@ -136,7 +136,26 @@
 }
 
 @media screen and (max-width: 480px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav__list {
+    row-gap: 10px;
+  }
+
+  .nav__item:last-child {
+    padding-right: 0;
+  }
+
   .nav__item {
     font-size: 1.2rem;
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  .nav__button {
+    margin-top: 20px;
   }
 }

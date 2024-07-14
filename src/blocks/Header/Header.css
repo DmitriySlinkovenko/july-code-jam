@@ -28,4 +28,11 @@
 }
 
 @media screen and (max-width: 480px) {
+  .header__container {
+  }
+
+  .header__logo {
+    width: 80px;
+    height: 80px;
+  }
 }
