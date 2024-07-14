@@ -10,6 +10,18 @@
   font-weight: 300;
 }
 
+.card__section {
+  position: relative;
+}
+
+.card__container {
+  max-width: 1248px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .card__inner {
   position: relative;
   width: 100%;

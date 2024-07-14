@@ -7,12 +7,12 @@
     <title>July Code Jam</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__container">
         <img src="<%=require('./images/logo-mixlist.png')%>" class="header__logo"/>
         <nav class="header__nav">
           <ul class="nav__list">
-            <li class="nav__item">Home</li>
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
             </li>
@@ -27,7 +27,7 @@
       <section class="main__section">
         <div class="section__container">
           <div class="section__heading section__heading_header">
-            <p class="main__text">
+            <p class="section__text">
              As the summer heat peaks, discover and share the perfect cocktails with Mixlist. We believe that the right drinks bring people together, refreshing minds and bodies. Explore our extensive collection of cocktail recipes, from timeless classics to innovative new mixes. Each recipe is crafted to make any gathering a cool, relaxing retreat. Whether you're hosting a party or enjoying a quiet evening, Mixlist has the perfect drink for every occasion. Cheers to cooler days, good company, and exceptional cocktails!
             </p>
           </div>
@@ -228,7 +228,7 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <p class="footer__text">Team Mixlist ©</p>
+        <p class="footer__text">MixList</p>
         <p class="footer__date">July 2024</p>
       </div>
     </footer>
@@ -241,12 +241,12 @@
                   <h2 class="card__title">Placeholder Title</h2>
                 </div>
                 <div class="card__back">
-                  <h2 class="card__title">Placeholder Title</h2>
-                  <p class="card__text" id="ingr1">Vodka - 20ml</p>
-                  <p class="card__text" id="ingr2">Southern Comfort - 20ml</p>
-                  <p class="card__text" id="ingr3">Passion fruit syrup - 20ml</p>
-                  <p class="card__text" id="ingr4">Sweet and sour - 60ml</p>
-                  <p class="card__text" id="ingr5">Club soda - 1 dash</p>
+                  <h2 class="card__title" id="card-back-title"></h2>
+                  <p class="card__text" id="ingr1"></p>
+                  <p class="card__text" id="ingr2"></p>
+                  <p class="card__text" id="ingr3"></p>
+                  <p class="card__text" id="ingr4"></p>
+
                   <button
                     class="card__like-button"
                     id="like-button"

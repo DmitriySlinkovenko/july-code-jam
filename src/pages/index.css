@@ -2,11 +2,12 @@
 @import url(../vendor/fonts.css);
 @import url(../blocks/Card/Card.css);
 @import url(../blocks/Header/Header.css);
-@import url(../blocks/Main/Main.css);
+@import url(../blocks/Section/Section.css);
 @import url(../blocks/About/About.css);
 @import url(../blocks/Footer/Footer.css);
 @import url(../blocks/Modal/Modal.css);
 @import url(../blocks/Form/Form.css);
+@import url(../blocks/Nav/Nav.css);
 
 body {
   margin: 0 auto;

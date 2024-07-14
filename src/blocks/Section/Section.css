@@ -1,18 +1,5 @@
-.card__container {
-  max-width: 1248px;
-  margin: 30px auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
 .section__container {
   margin-top: 80px;
-}
-
-.card__section {
-  position: relative;
-  max-width: 1440px;
 }
 
 .section__container::before {
@@ -29,9 +16,8 @@
 }
 
 .section__heading {
-  min-height: 175px;
-  width: 100%;
-  max-width: 1440px;
+  height: 250px;
+  width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
@@ -45,16 +31,15 @@
   padding: 0;
 }
 
-.main__text {
-  max-width: 1248px;
+.section__text {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
   font-family: "Roboto", sans-serif, Arial;
   font-weight: 300;
   justify-content: center;
 }
 
-.main__text::before {
+.section__text::before {
   content: "";
   position: absolute;
   top: 0;
