@@ -18,7 +18,6 @@ export default class AddCardForm {
 
   _getInputValues() {
     const cardData = {};
-    console.log(this._inputList);
     this._inputList.forEach((input) => {
       cardData[input.name] = input.value;
     });
@@ -29,9 +28,6 @@ export default class AddCardForm {
   setEventListeners() {
     this._closeButton.addEventListener("click", () => {
       this.close();
-    });
-    this._saveButton.addEventListener("click", () => {
-      console.log(this._getInputValues());
     });
     this.form.addEventListener("submit", (evt) => {
       evt.preventDefault();
