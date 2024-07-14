@@ -16,12 +16,6 @@ body {
   max-width: 1440px;
   flex-direction: column;
   background: rgba(236, 240, 241, 1);
-  /* background: linear-gradient(
-    0deg,
-    rgba(236, 240, 241, 1) 0%,
-    rgba(236, 240, 241, 1) 1%,
-    rgba(236, 240, 241, 1) 11%
-  ); */
   color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif, Arial;
   font-size: 1.5rem;
@@ -34,8 +28,6 @@ body {
     width: 0;
   }
 }
-
-/* Logo background color rgba(52, 50, 48, 1) */
 
 body.night-mode {
   background: #333;

@@ -13,9 +13,6 @@
 }
 
 .header__logo {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   width: 100px;
   height: 100px;
   box-shadow: 1px rgba(0, 0, 0, 0.2);
@@ -31,5 +28,9 @@
   .header__logo {
     width: 80px;
     height: 80px;
+  }
+
+  .header__container {
+    flex-direction: column;
   }
 }

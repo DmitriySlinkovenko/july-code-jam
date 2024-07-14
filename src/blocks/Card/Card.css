@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .card__container-heading {
@@ -40,7 +41,6 @@
   margin: 0 auto;
   color: black;
   border: 1px solid #000;
-  /* background-color: #e0e0e0; */
   display: block;
   position: relative;
   overflow: hidden;
@@ -73,7 +73,6 @@
 }
 
 .card__refresh-button:hover::before {
-  /* transform: translateX(100%); */
   opacity: 1;
   animation: shimmer 3s ease-in-out infinite;
 }

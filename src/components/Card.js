@@ -33,27 +33,6 @@ class Card {
     });
   }
 
-  getId() {
-    return this._id;
-  }
-
-  setIsLiked(isLiked) {
-    this._isLiked = isLiked;
-    this._renderLikes();
-  }
-
-  isLiked() {
-    return this._isLiked;
-  }
-
-  _renderLikes() {
-    if (this._isLiked) {
-      this._likeButton.classList.add("card__like-button_active");
-    } else {
-      this._likeButton.classList.remove("card__like-button_active");
-    }
-  }
-
   _getTemplate() {
     const cardElement = document
       .querySelector(this._templateSelector)
@@ -79,7 +58,6 @@ class Card {
     this._ing3.textContent = this._ingr3;
     this._ing4.textContent = this._ingr4;
     this._setEventListeners();
-    this._renderLikes();
     return this._element;
   }
 }

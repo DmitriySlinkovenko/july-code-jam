@@ -46,66 +46,6 @@ class Api {
       }),
     }).then((res) => this._checkResponse(res));
   }
-
-  async getRecentCocktails() {
-    return this._request("/recent.php");
-  }
-
-  async searchCocktailByName(name) {
-    return this._request(`/search.php?s=${name}`);
-  }
-
-  async listCocktailsByFirstLetter(letter) {
-    return this._request(`/search.php?f=${letter}`);
-  }
-
-  async searchIngredientByName(name) {
-    return this._request(`/search.php?i=${name}`);
-  }
-
-  async lookupCocktailById(id) {
-    return this._request(`/lookup.php?i=${id}`);
-  }
-
-  async lookupIngredientById(id) {
-    return this._request(`/lookup.php?iid=${id}`);
-  }
-
-  async getRandomCocktail() {
-    return this._request(`/random.php`);
-  }
-
-  async searchByIngredient(ingredient) {
-    return this._request(`/filter.php?i=${ingredient}`);
-  }
-
-  async filterByAlcoholic(alcoholic) {
-    return this._request(`/filter.php?a=${alcoholic}`);
-  }
-
-  async filterByCategory(category) {
-    return this._request(`/filter.php?c=${category}`);
-  }
-
-  async filterByGlass(glass) {
-    return this._request(`/filter.php?g=${glass}`);
-  }
-
-  async listCategories() {
-    return this._request(`/list.php?c=list`);
-  }
-
-  async listGlasses() {
-    return this._request(`/list.php?g=list`);
-  }
-
-  async listIngredients() {
-    return this._request(`/list.php?i=list`);
-  }
-
-  async listAlcoholicFilters() {
-    return this._request(`/list.php?a=list`);
-  }
 }
 
 // API INIT

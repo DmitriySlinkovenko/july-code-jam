@@ -135,11 +135,10 @@
   width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 505px) {
   .nav {
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
   }
 
   .nav__list {

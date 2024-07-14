@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .modal__container {
     width: 300px;
   }
@@ -73,5 +73,12 @@
   .modal__close-button {
     width: 25px;
     height: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal__close-button {
+    top: -50px;
+    left: calc(100% - 25px);
   }
 }

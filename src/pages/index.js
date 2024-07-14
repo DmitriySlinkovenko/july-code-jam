@@ -6,14 +6,60 @@ import cocktailApi from "../components/CocktailsApi";
 import logo1 from "../images/logo-mixlist.png";
 import logoDark from "../images/logo-mixlist-night.png";
 
+// Constants
+
 const addCocktailBtn = document.querySelector(".nav__button");
 const addModal = new AddCardForm("#add-card-modal", handleAddFormSubmit);
+const refreshBtn = document.querySelector(".card__refresh-button");
+const logo = document.getElementById("header-logo");
+const body = document.body;
+const navLink = document.querySelectorAll(".nav__link");
+const navBtn = document.querySelector(".nav__button");
+
+// Event Listeners
 
 addCocktailBtn.addEventListener("click", () => {
   addModal.open();
 });
 
 addModal.setEventListeners();
+
+logo.addEventListener("click", () => {
+  body.classList.toggle("night-mode");
+
+  if (body.classList.contains("night-mode")) {
+    navLink.forEach((link) => {
+      link.classList = "nav__link_dark";
+    });
+    navBtn.classList = "nav__button_dark";
+    logo.src = logoDark;
+  } else {
+    navLink.forEach((link) => (link.classList = "nav__link"));
+    navBtn.classList = "nav__button";
+    logo.src = logo1;
+  }
+});
+
+refreshBtn.addEventListener("click", () => {
+  cocktailApi
+    .getInitialCards()
+    .then((res) => {
+      cardSection = new Section(
+        {
+          items: res,
+          renderer: (cardData) => {
+            const card = createCard(cardData);
+            cardSection.addItem(card);
+          },
+        },
+        ".card__container"
+      );
+      cardSection.renderItems();
+    })
+    .catch((err) => console.error("Error fetching initial cards", err));
+});
+
+// Cards loading logic
 
 function createCard(data) {
   const card = new Card(data, "#card-template");
@@ -57,6 +103,8 @@ cocktailApi
   })
   .catch((err) => console.error("Error fetching initial cards", err));
 
+// Adding cards logic
+
 function handleAddFormSubmit({
   title,
   imageLink,
@@ -79,24 +127,3 @@ function handleAddFormSubmit({
       cardSection.addItem(newCard);
     });
 }
-
-const logo = document.getElementById("header-logo");
-const body = document.body;
-const navLink = document.querySelectorAll(".nav__link");
-const navBtn = document.querySelector(".nav__button");
-
-logo.addEventListener("click", () => {
-  body.classList.toggle("night-mode");
-
-  if (body.classList.contains("night-mode")) {
-    navLink.forEach((link) => {
-      link.classList = "nav__link_dark";
-    });
-    navBtn.classList = "nav__button_dark";
-    logo.src = logoDark;
-  } else {
-    navLink.forEach((link) => (link.classList = "nav__link"));
-    navBtn.classList = "nav__button";
-    logo.src = logo1;
-  }
-});

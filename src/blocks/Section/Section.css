@@ -23,7 +23,6 @@
 }
 
 .section__heading_header {
-  /* background-image: url(../../images/mainBG.png); */
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -39,6 +38,7 @@
   justify-content: center;
   text-align: center;
   line-height: 1.5;
+  padding: 0 20px;
 }
 
 .section__text::before {
