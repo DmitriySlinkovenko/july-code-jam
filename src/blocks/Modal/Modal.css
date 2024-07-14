@@ -6,8 +6,6 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
   visibility: hidden;
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
@@ -29,6 +27,7 @@
   width: 430px;
   padding: 34px 36px 36px;
   box-sizing: border-box;
+  margin: auto;
   border-radius: 0;
   position: relative;
 }
@@ -63,4 +62,20 @@
 .modal__close-button:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .modal__container {
+    width: 300px;
+  }
+
+  .modal__heading {
+    margin-bottom: 25px;
+  }
 }

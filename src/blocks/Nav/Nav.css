@@ -139,6 +139,7 @@
   .nav {
     display: flex;
     flex-direction: row;
+    padding-left: 10px;
   }
 
   .nav__list {
