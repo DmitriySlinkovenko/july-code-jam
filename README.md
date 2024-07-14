@@ -31,9 +31,13 @@ Currently, two official plugins are available:
 
 ## Features
 
-- **Recipe Cards:** Each card displays a drink image and name on the front. Clicking the card flips it over to reveal the recipe.
+- **Recipe Cards:** Each card displays a drink image and name on the front. Hovering over the card flips it over to reveal the recipe.
 - **Recipe Sharing:** Users can submit their own cocktail recipes.
-- **Database Integration:** The app pulls from a database of original cocktail recipes that persist and don't disappear on page reload.
+- **Database Integration:** The app pulls from a database of original cocktail recipes.
+- **Mixlist Button:** A Mixlist button populates the page with new and interesting drinks for users to discover.
+- **Night Mode:** Users can switch to night mode by clicking the Mixlist logo in the header.
+- **Hover Animations:** All buttons, including the header logo, feature hover animations utilizing various pseudoclasses (e.g., :hover, ::before, ::after) for a dynamic user experience.
+- **Likes Feature:** Users can like their favorite cocktail recipes with a simple click.
 
 ## Responsive Design
 
@@ -60,6 +64,7 @@ In "Mixlist", JavaScript ES6 is used to create an immersive and interactive expe
 - Webpack for module bundling
 - Git and GitHub for version control
 - Figma for design mockups
+- MongoDB Compass for database management
 
 ## Webpack Setup
 
@@ -89,13 +94,12 @@ We are committed to continually enhancing the user experience and feature set of
 - **Interactive Map Integration:** Implement an interactive map that allows users to explore cocktail recipes geographically.
 - **Personalized User Galleries:** Enable users to create and share personalized galleries, organizing recipes based on themes or occasions.
 - **Mobile App Development:** Expand the platform's reach by developing a mobile application for iOS and Android.
-- **Dark Mode:** Provide a dark mode option for reduced eye strain and improved accessibility in low-light conditions.
 - **Performance Optimization:** Continue to optimize the site's performance, particularly image loading times, for a smoother user experience.
 - **Accessibility Improvements:** Ensure the site is fully accessible by conducting thorough accessibility audits and addressing any issues to comply with WCAG guidelines.
 
 ## Author
 
-[Your Name]
+Jack Malzone
 
 ## License
 
@@ -108,4 +112,11 @@ MIT
 
 ## Contact
 
-For any additional questions or comments, please email [your-email@example.com](mailto:your-email@example.com).
+For any additional questions or comments, please email [jackmalzone@gmail.com](mailto:jackmalzone@gmail.com).
+
+## Team
+
+- **Dmitriy Slinkovenko** - [LinkedIn](https://www.linkedin.com/in/dmitriy-slinkovenko/)
+- **Avery Morgan** - [LinkedIn](https://www.linkedin.com/in/avery-morgan/)
+- **Jack Malzone** - [LinkedIn](https://www.linkedin.com/in/jackmalzone/)
+- **Telasja Reynolds** - [LinkedIn](https://www.linkedin.com/in/telasjareynolds/)
