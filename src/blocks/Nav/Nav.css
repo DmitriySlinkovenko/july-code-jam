@@ -134,3 +134,9 @@
 .nav__button_dark:hover::before {
   width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .nav__item {
+    font-size: 1.2rem;
+  }
+}

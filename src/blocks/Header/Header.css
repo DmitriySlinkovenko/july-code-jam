@@ -26,3 +26,6 @@
 .header__logo:hover {
   transform: scale(1.4);
 }
+
+@media screen and (max-width: 480px) {
+}
