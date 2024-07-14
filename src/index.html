@@ -9,7 +9,7 @@
   <body>
     <header class="header" id="home">
       <div class="header__container">
-        <img src="<%=require('./images/logo-mixlist.png')%>" class="header__logo"/>
+        <img src="<%=require('./images/logo-mixlist.png')%>" class="header__logo" id="header-logo"/>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -337,5 +337,14 @@
         </form>
       </div>
     </div>
+
+    <script>
+      const logo = document.getElementById('header-logo');
+      const body = document.body;
+    
+      logo.addEventListener('click', () => {
+        body.classList.toggle('night-mode');
+      });
+    </script>
   </body>
 </html>
