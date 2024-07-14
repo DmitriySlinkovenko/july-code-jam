@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import Section from "../components/Section";
 import AddCardForm from "../components/Form";
 import cocktailApi from "../components/CocktailsApi";
+import FormValidator from "../components/FormValidator";
 import logo1 from "../images/logo-mixlist.png";
 import logoDark from "../images/logo-mixlist-night.png";
 
@@ -16,13 +17,24 @@ const body = document.body;
 const navLink = document.querySelectorAll(".nav__link");
 const navBtn = document.querySelector(".nav__button");
 
+const validationConfig = {
+  formSelector: ".form",
+  inputSelector: ".form__input",
+  submitButtonSelector: ".form__save-button",
+  inactiveButtonClass: "form__button_disabled",
+  inputErrorClass: "form__input_type_error",
+  errorClass: "form__input-error_active",
+};
+
 // Event Listeners
+
+addModal.setEventListeners();
+const addCardFormValidator = new FormValidator(validationConfig, addModal.form);
+addCardFormValidator.enableValidation();
 
 addCocktailBtn.addEventListener("click", () => {
   addModal.open();
 });
-
-addModal.setEventListeners();
 
 logo.addEventListener("click", () => {
   body.classList.toggle("night-mode");
