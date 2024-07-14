@@ -1,0 +1,32 @@
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  display: inline;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav__button:hover {
+  color: rgba(0, 0, 0, 0.6);
+}

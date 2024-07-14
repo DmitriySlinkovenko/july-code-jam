@@ -1,17 +1,5 @@
-.card__container {
-  max-width: 1248px;
-  margin: 30px auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
 .section__container {
   margin-top: 80px;
-}
-
-.card__section {
-  position: relative;
 }
 
 .section__container::before {
@@ -43,7 +31,7 @@
   padding: 0;
 }
 
-.main__text {
+.section__text {
   max-width: 1200px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif, Arial;
@@ -51,7 +39,7 @@
   justify-content: center;
 }
 
-.main__text::before {
+.section__text::before {
   content: "";
   position: absolute;
   top: 0;
