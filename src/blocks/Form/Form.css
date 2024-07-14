@@ -51,3 +51,16 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   pointer-events: none;
 }
+
+.form__input_type_error {
+  border-color: #ff0000;
+}
+
+.form__button_disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.form__input-error {
+  color: #ff0000;
+}
