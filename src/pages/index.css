@@ -24,6 +24,7 @@ body {
   color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif, Arial;
   font-size: 1.5rem;
+  overflow-x: hidden;
 }
 
 @keyframes showRight {
@@ -31,3 +32,5 @@ body {
     width: 0;
   }
 }
+
+/* Logo background color rgba(52, 50, 48, 1) */

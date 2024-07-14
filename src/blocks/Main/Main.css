@@ -9,9 +9,11 @@
 .section__container {
   margin-top: 80px;
 }
+
 .card__section {
   position: relative;
 }
+
 .section__container::before {
   content: "";
   position: absolute;
@@ -28,21 +30,25 @@
 .section__heading {
   height: 250px;
   width: 1440px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .section__heading_header {
-  background-image: url(../../images/mainBG.png);
+  /* background-image: url(../../images/mainBG.png); */
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
   position: relative;
+  padding: 0;
 }
 
 .main__text {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif, Arial;
   font-weight: 300;
+  justify-content: center;
 }
 
 .main__text::before {

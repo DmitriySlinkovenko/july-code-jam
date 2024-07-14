@@ -28,6 +28,9 @@
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card:hover .card__inner {
