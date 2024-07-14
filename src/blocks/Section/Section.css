@@ -37,6 +37,8 @@
   font-family: "Roboto", sans-serif, Arial;
   font-weight: 300;
   justify-content: center;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .section__text::before {
