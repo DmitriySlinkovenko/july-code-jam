@@ -23,6 +23,7 @@
   border: 2px solid black;
   padding: 5px;
   position: relative;
+  transition: 0.5s;
 }
 
 .nav__link::before {
@@ -35,6 +36,36 @@
   background: #081b29;
   transition: 0.5s;
   z-index: -1;
+}
+
+.nav__link_dark {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav__link_dark:hover {
+  color: black;
+}
+
+.nav__link_dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.nav__link_dark:hover::before {
+  width: 100%;
 }
 
 .nav__link:hover::before {
@@ -51,7 +82,7 @@
   padding: 5px;
   z-index: 1;
   position: relative;
-  
+  transition: 0.5s;
 }
 
 .nav__button::before {
@@ -71,5 +102,35 @@
 }
 
 .nav__button:hover::before {
+  width: 100%;
+}
+.nav__button_dark {
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 5px;
+  z-index: 1;
+  position: relative;
+  background: transparent;
+  color: white;
+  transition: 0.5s;
+}
+
+.nav__button_dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.nav__button_dark:hover {
+  color: black;
+}
+
+.nav__button_dark:hover::before {
   width: 100%;
 }
