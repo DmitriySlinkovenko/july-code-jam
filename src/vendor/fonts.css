@@ -29,3 +29,27 @@
   font-display: swap;
   src: url("./fonts/Roboto-Light.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "rexton";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/rexton-black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "rexton";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/rexton-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "rexton";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/rexton-4.ttf") format("truetype");
+}

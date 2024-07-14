@@ -12,6 +12,7 @@
 
 .card__section {
   position: relative;
+  max-width: 1440px;
 }
 
 .section__container::before {
@@ -28,8 +29,9 @@
 }
 
 .section__heading {
-  height: 250px;
-  width: 1440px;
+  min-height: 175px;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
@@ -44,8 +46,9 @@
 }
 
 .main__text {
-  max-width: 1200px;
+  max-width: 1248px;
   margin: 0 auto;
+  padding: 0;
   font-family: "Roboto", sans-serif, Arial;
   font-weight: 300;
   justify-content: center;

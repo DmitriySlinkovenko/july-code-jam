@@ -1,3 +1,22 @@
 .footer {
   margin: 50px auto;
 }
+
+.footer__text {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__date {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  width: 100%;
+}

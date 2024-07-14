@@ -11,6 +11,7 @@
   opacity: 0;
   visibility: hidden;
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  font-family: "Roboto", sans-serif, Arial;
 }
 
 .modal_opened {
@@ -27,7 +28,7 @@
   width: 430px;
   padding: 34px 36px 36px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 0;
   position: relative;
 }
 
@@ -39,6 +40,8 @@
   text-align: center;
   height: 23px;
   color: #ecf0f1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .modal__close-button {

@@ -36,10 +36,22 @@
 }
 
 .about__text {
-  font-family: "Roboto Slab", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
   font-size: 26px;
   font-weight: 400;
   color: black;
+  text-align: center;
+  width: 100%;
+}
+
+.about__description {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  width: 100%;
 }
 
 .about__image {
