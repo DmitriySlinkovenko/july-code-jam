@@ -189,5 +189,6 @@
 
 @media screen and (max-width: 480px) {
   .card__container {
+    justify-content: center;
   }
 }

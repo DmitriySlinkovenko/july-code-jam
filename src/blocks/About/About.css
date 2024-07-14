@@ -61,3 +61,29 @@
   width: 175px;
   height: 175px;
 }
+
+@media screen and (max-width: 480px) {
+  .about__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .about__card {
+    width: 175px;
+  }
+
+  .about__text {
+    font-size: 20px;
+  }
+
+  .about__description {
+    font-size: 18px;
+  }
+
+  .about__image {
+    width: 125px;
+    height: 125px;
+  }
+}
