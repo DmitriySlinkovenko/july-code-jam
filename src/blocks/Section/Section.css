@@ -16,8 +16,8 @@
 }
 
 .section__heading {
-  height: 250px;
-  width: 1440px;
+  height: 150px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
