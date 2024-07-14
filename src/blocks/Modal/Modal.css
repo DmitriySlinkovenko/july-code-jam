@@ -13,7 +13,6 @@
 }
 
 .modal_opened {
-  display: flex;
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
@@ -22,8 +21,6 @@
 
 .modal__container {
   background-color: #32302e;
-  display: flex;
-  flex-direction: column;
   width: 430px;
   padding: 34px 36px 36px;
   box-sizing: border-box;
@@ -65,17 +62,16 @@
 }
 
 @media screen and (max-width: 480px) {
-  .modal {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-  }
-
   .modal__container {
     width: 300px;
   }
 
   .modal__heading {
     margin-bottom: 25px;
+  }
+
+  .modal__close-button {
+    width: 25px;
+    height: 25px;
   }
 }
