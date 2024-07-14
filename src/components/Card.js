@@ -1,10 +1,9 @@
 class Card {
-  constructor(data, templateSelector, handleLike) {
+  constructor(data, templateSelector) {
     this._title = data.title || data.strDrink;
     this._imageLink = data.imageLink || data.strDrinkThumb;
     this._templateSelector = templateSelector;
     this._id = data._id || data.idDrink;
-    this._handleLike = handleLike;
     this._isLiked = data.isLiked;
     this._ingr1 =
       data.ingredient1 ||
@@ -24,13 +23,6 @@ class Card {
       data.ingredient4 ||
       (data.strIngredient4 == null ? "" : data.strIngredient4) +
         (data.strMeasure4 == null ? "" : "-" + data.strMeasure4);
-  }
-
-  _setEventListeners() {
-    this._likeButton = this._element.querySelector(".card__like-button");
-    this._likeButton.addEventListener("click", () => {
-      this._handleLike(this);
-    });
   }
 
   _getTemplate() {
@@ -57,7 +49,6 @@ class Card {
     this._ing2.textContent = this._ingr2;
     this._ing3.textContent = this._ingr3;
     this._ing4.textContent = this._ingr4;
-    this._setEventListeners();
     return this._element;
   }
 }
