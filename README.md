@@ -1,6 +1,6 @@
 # Project: Mixlist
 
-# Overview
+## Overview
 
 - Intro
 - Features
@@ -68,7 +68,10 @@ The project uses Webpack for bundling JavaScript modules, enabling a cleaner and
 To view the project on your local machine:
 
 1. Clone the public repository using `git clone`.
-2. Clone the backend repository from [here]https://github.com/DmitriySlinkovenko/july-code-jam-backend.
+2. Clone the backend repository from [here](https://github.com/DmitriySlinkovenko/july-code-jam-backend).
+3. Have MongoDB installed and running in the background for full experience.
+4. Open backend folder and run "npm install" and "npm run dev".
+5. Open the frontend folder and run "npm install" and "npm run dev".
 
 ## Contributing
 
