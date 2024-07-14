@@ -37,6 +37,24 @@ cocktailApi
   })
   .catch((err) => console.error("Error fetching initial cards", err));
 
+cocktailApi
+  .getSavedCards()
+  .then((res) => {
+    let savedCards = { drinks: res };
+    cardSection = new Section(
+      {
+        items: savedCards,
+        renderer: (cardData) => {
+          const card = createCard(cardData);
+          cardSection.addItem(card);
+        },
+      },
+      ".card__container"
+    );
+    cardSection.renderItems();
+  })
+  .catch((err) => console.error("Error fetching saved cards", err));
+
 function handleAddFormSubmit({
   title,
   imageLink,

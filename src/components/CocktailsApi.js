@@ -19,6 +19,12 @@ class Api {
     );
   }
 
+  getSavedCards() {
+    return fetch(`http://127.0.0.1:3003/items`).then((res) =>
+      this._checkResponse(res)
+    );
+  }
+
   addCard({
     title,
     imageLink,
