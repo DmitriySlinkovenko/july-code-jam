@@ -19,7 +19,13 @@ class Api {
     );
   }
 
-  async addCard({
+  getSavedCards() {
+    return fetch(`http://127.0.0.1:3003/items`).then((res) =>
+      this._checkResponse(res)
+    );
+  }
+
+  addCard({
     title,
     imageLink,
     ingredient1,
@@ -27,8 +33,9 @@ class Api {
     ingredient3,
     ingredient4,
   }) {
-    return this._request("/items", {
+    return fetch("http://127.0.0.1:3003/items", {
       method: "POST",
+      headers: this._headers,
       body: JSON.stringify({
         title,
         imageLink,
@@ -37,7 +44,7 @@ class Api {
         ingredient3,
         ingredient4,
       }),
-    });
+    }).then((res) => this._checkResponse(res));
   }
 
   async getRecentCocktails() {

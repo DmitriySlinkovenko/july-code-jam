@@ -9,10 +9,16 @@
   <body>
     <header class="header" id="home">
       <div class="header__container">
-        <img src="<%=require('./images/logo-mixlist.png')%>" class="header__logo" id="header-logo"/>
+        <img
+          src="<%=require('./images/logo-mixlist.png')%>"
+          class="header__logo"
+          id="header-logo"
+        />
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
             </li>
@@ -28,179 +34,29 @@
         <div class="section__container">
           <div class="section__heading section__heading_header">
             <p class="section__text">
-             As the summer heat peaks, discover and share the perfect cocktails with Mixlist. We believe that the right drinks bring people together, refreshing minds and bodies. Explore our extensive collection of cocktail recipes, from timeless classics to innovative new mixes. Each recipe is crafted to make any gathering a cool, relaxing retreat. Whether you're hosting a party or enjoying a quiet evening, Mixlist has the perfect drink for every occasion. Cheers to cooler days, good company, and exceptional cocktails!
+              As the summer heat peaks, discover and share the perfect cocktails
+              with Mixlist. We believe that the right drinks bring people
+              together, refreshing minds and bodies. Explore our extensive
+              collection of cocktail recipes, from timeless classics to
+              innovative new mixes. Each recipe is crafted to make any gathering
+              a cool, relaxing retreat. Whether you're hosting a party or
+              enjoying a quiet evening, Mixlist has the perfect drink for every
+              occasion. Cheers to cooler days, good company, and exceptional
+              cocktails!
             </p>
           </div>
         </div>
       </section>
       <section class="card__section">
-        
         <div class="section__container">
-          <button type="button" class="card__refresh-button" id="refresh-button">
+          <button
+            type="button"
+            class="card__refresh-button"
+            id="refresh-button"
+          >
             <span>THE MIXLIST</span>
           </button>
-          <div class="card__container">
-            <!-- <div class="card">
-              
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Classic_Daiquiri_in_Cocktail_Glass.jpg/600px-Classic_Daiquiri_in_Cocktail_Glass.jpg?20160627180959" alt="" class="card__image" />
-                  <h2 class="card__title">Daiquiri</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Daiquiri</h2>
-                  <p class="card__text">Light rum - 1 1/2 oz</p>
-                  <p class="card__text">Lime - Juice of 1/2</p>
-                  <p class="card__text">Powdered sugar - 1 tsp</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://www.thecocktaildb.com/images/media/drink/doyxqb1493067556.jpg" alt="" class="card__image" />
-                  <h2 class="card__title">Atlantic Sun</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Atlantic Sun</h2>
-                  <p class="card__text" id="ingr1">Vodka - 20ml</p>
-                  <p class="card__text" id="ingr2">Southern Comfort - 20ml</p>
-                  <p class="card__text" id="ingr3">Passion fruit syrup - 20ml</p>
-                  <p class="card__text" id="ingr4">Sweet and sour - 60ml</p>
-                  <p class="card__text" id="ingr5">Club soda - 1 dash</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://www.thecocktaildb.com/images/media/drink/wrxrxp1472812609.jpg" alt="" class="card__image" />
-                  <h2 class="card__title">Absolut Evergreen</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Absolut Evergreen</h2>
-                  <p class="card__text">Absolut Citron - 2/3 part</p>
-                  <p class="card__text">Pisang Ambon - 2/3 part</p>
-                  <p class="card__text">Ice cubes</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://www.thecocktaildb.com/images/media/drink/xuyqrw1472811825.jpg" alt="" class="card__image" />
-                  <h2 class="card__title">Absolut Stress #2</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Absolut Stress #2</h2>
-                  <p class="card__text">Absolut Vodka - 1 1/2 oz</p>
-                  <p class="card__text">Peach schnapps - 1/2 oz</p>
-                  <p class="card__text">Coconut liqueur - 1/2 oz</p>
-                  <p class="card__text">Cranberry juice - 1 1/2 oz</p>
-                  <p class="card__text">Pineapple juice - 1 1/2 oz</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://www.thecocktaildb.com/images/media/drink/su1olx1582473812.jpg" alt="" class="card__image" />
-                  <h2 class="card__title">Orange Oasis</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Orange Oasis</h2>
-                  <p class="card__text">Cherry brandy - 1/2 oz</p>
-                  <p class="card__text">Gin - 1 1/2 oz</p>
-                  <p class="card__text">Orange juice - 4 oz</p>
-                  <p class="card__text">Ginger ale - fill</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://www.thecocktaildb.com/images/media/drink/qxrvqw1472718959.jpg" alt="" class="card__image" />
-                  <h2 class="card__title">Bailey's Dream Shake</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Bailey's Dream Shake</h2>
-                  <p class="card__text">Baileys irish cream - 2 oz</p>
-                  <p class="card__text">Vanilla ice-cream - 2 scoops</p>
-                  <p class="card__text">Cream - fill</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://www.thecocktaildb.com/images/media/drink/suqyyx1441254346.jpg" alt="" class="card__image" />
-                  <h2 class="card__title">Raspberry Cooler</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Raspberry Cooler</h2>
-                  <p class="card__text">Raspberry vodka - 2 oz</p>
-                  <p class="card__text">Lemon-lime soda - 4 oz</p>
-                  <p class="card__text">Ice</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="https://www.thecocktaildb.com/images/media/drink/xutuqs1483388296.jpg" alt="" class="card__image" />
-                  <h2 class="card__title">Almond Joy</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title">Almond Joy</h2>
-                  <p class="card__text">Amaretto - 1/2 oz</p>
-                  <p class="card__text">Creme de Cacao - 1/2 oz white</p>
-                  <p class="card__text">Light cream - 2 oz</p>
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div> -->
-          </div>
-            
-          </div>
+          <div class="card__container"></div>
         </div>
       </section>
       <section class="about__section" id="about">
@@ -217,12 +73,20 @@
               <p class="about__text about__description">Front-end Engineer</p>
             </div>
             <div class="about__card">
-              <img src="<%=require('./images/profile-jack.jpg')%>" alt="Portrait photo of Jack Malzone" class="about__image" />
+              <img
+                src="<%=require('./images/profile-jack.jpg')%>"
+                alt="Portrait photo of Jack Malzone"
+                class="about__image"
+              />
               <h2 class="about__text">Jack</h2>
               <p class="about__text about__description">Front-end Engineer</p>
             </div>
             <div class="about__card">
-              <img src="" alt="" class="about__image" />
+              <img
+                src="<%=require('./images/profile-telasja.jpg')%>"
+                alt="Portrait photo of Telasja Reynolds"
+                class="about__image"
+              />
               <p class="about__text">Telasja</p>
               <p class="about__text about__description">Front-end Engineer</p>
             </div>
@@ -239,44 +103,43 @@
 
     <template class="card__template" id="card-template">
       <div class="card">
-              <div class="card__inner">
-                <div class="card__front">
-                  <img src="<%=require('./images/No-Image-Placeholder.svg.png')%>" alt="" class="card__image" />
-                  <h2 class="card__title">Placeholder Title</h2>
-                </div>
-                <div class="card__back">
-                  <h2 class="card__title" id="card-back-title"></h2>
-                  <p class="card__text" id="ingr1"></p>
-                  <p class="card__text" id="ingr2"></p>
-                  <p class="card__text" id="ingr3"></p>
-                  <p class="card__text" id="ingr4"></p>
+        <div class="card__inner">
+          <div class="card__front">
+            <img
+              src="<%=require('./images/No-Image-Placeholder.svg.png')%>"
+              alt=""
+              class="card__image"
+            />
+            <h2 class="card__title">Placeholder Title</h2>
+          </div>
+          <div class="card__back">
+            <h2 class="card__title" id="card-back-title"></h2>
+            <p class="card__text" id="ingr1"></p>
+            <p class="card__text" id="ingr2"></p>
+            <p class="card__text" id="ingr3"></p>
+            <p class="card__text" id="ingr4"></p>
 
-                  <button
-                    class="card__like-button"
-                    id="like-button"
-                    type="button"
-                  ></button>
-                </div>
-              </div>
-            </div>
+            <button
+              class="card__like-button"
+              id="like-button"
+              type="button"
+            ></button>
+          </div>
+        </div>
+      </div>
     </template>
 
     <div class="modal" id="add-card-modal">
       <div class="modal__container">
         <button class="modal__close-button" type="button"></button>
         <h2 class="modal__heading">New Recipe</h2>
-        <form
-          class="form"
-          id="cocktail-submit__form"
-          name="add-cocktail-form"
-          novalidate
-        >
+        <form class="form" id="cocktail-submit__form" name="add-cocktail-form">
           <label class="form__label"
             ><input
               type="text"
               class="form__input"
-              id="input__cocktail_title"
-              name="name"
+              id="title"
+              name="title"
               placeholder="Cocktail Name"
               required
               minlength="1"
@@ -287,8 +150,8 @@
             ><input
               type="url"
               class="form__input"
-              id="input__cocktail_image"
-              name="image"
+              id="imageLink"
+              name="imageLink"
               placeholder="Image Link"
               required
             />
@@ -297,41 +160,41 @@
             ><input
               type="text"
               class="form__input"
-              id="input__ingredient1"
+              id="ingredient1"
               name="ingredient1"
               placeholder="First Ingredient"
-              required />
+              required
+            />
           </label>
           <label class="form__label"
             ><input
               type="text"
               class="form__input"
-              id="input__ingredient2"
+              id="ingredient2"
               name="ingredient2"
               placeholder="Second Ingredient"
-              required />
+              required
+            />
           </label>
           <label class="form__label"
             ><input
               type="text"
               class="form__input"
-              id="input__ingredient3"
+              id="ingredient3"
               name="ingredient3"
-              placeholder="Third Ingredient" />
+              placeholder="Third Ingredient"
+            />
           </label>
           <label class="form__label"
             ><input
               type="text"
               class="form__input"
-              id="input__ingredient4"
+              id="ingredient4"
               name="ingredient4"
-              placeholder="Fourth Ingredient" />
+              placeholder="Fourth Ingredient"
+            />
           </label>
-          <button
-            class="form__save-button"
-            id="add-card__button"
-            type="submit"
-          >
+          <button class="form__save-button" id="add-card__button" type="submit">
             Create
           </button>
         </form>
@@ -339,11 +202,11 @@
     </div>
 
     <script>
-      const logo = document.getElementById('header-logo');
+      const logo = document.getElementById("header-logo");
       const body = document.body;
-    
-      logo.addEventListener('click', () => {
-        body.classList.toggle('night-mode');
+
+      logo.addEventListener("click", () => {
+        body.classList.toggle("night-mode");
       });
     </script>
   </body>
