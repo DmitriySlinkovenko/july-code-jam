@@ -26,8 +26,6 @@ class Api {
     ingredient2,
     ingredient3,
     ingredient4,
-    ingredient5,
-    ingredient6,
   }) {
     return this._request("/items", {
       method: "POST",
@@ -38,8 +36,6 @@ class Api {
         ingredient2,
         ingredient3,
         ingredient4,
-        ingredient5,
-        ingredient6,
       }),
     });
   }

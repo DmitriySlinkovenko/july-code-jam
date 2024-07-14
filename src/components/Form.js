@@ -1,6 +1,7 @@
 export default class AddCardForm {
   constructor(formModal, handleAddFormSubmit) {
     this.formModal = document.querySelector(formModal);
+    this.form = this.formModal.querySelector(".form");
     this.handleAddFormSubmit = handleAddFormSubmit;
     this._closeButton = document.querySelector(".modal__close-button");
     this._saveButton = document.querySelector(".form__save-button");
@@ -29,13 +30,13 @@ export default class AddCardForm {
     this._closeButton.addEventListener("click", () => {
       this.close();
     });
-    this.formModal.addEventListener("submit", (evt) => {
+    this.form.addEventListener("submit", (evt) => {
       evt.preventDefault();
       this.handleAddFormSubmit(_getInputValues());
     });
   }
 
   resetForm() {
-    this.formModal.reset();
+    this.form.reset();
   }
 }

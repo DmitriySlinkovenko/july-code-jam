@@ -39,8 +39,15 @@ cocktailApi
   })
   .catch((err) => console.error("Error fetching initial cards", err));
 
-function handleAddFormSubmit() {
-  api
+function handleAddFormSubmit({
+  title,
+  imageLink,
+  ingredient1,
+  ingredient2,
+  ingredient3,
+  ingredient4,
+}) {
+  cocktailApi
     .addCard({
       title,
       imageLink,
@@ -48,8 +55,6 @@ function handleAddFormSubmit() {
       ingredient2,
       ingredient3,
       ingredient4,
-      ingredient5,
-      ingredient6,
     })
     .then((data) => {
       const newCard = createCard(data);
