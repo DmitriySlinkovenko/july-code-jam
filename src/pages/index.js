@@ -4,8 +4,6 @@ import Section from "../components/Section";
 import AddCardForm from "../components/Form";
 import cocktailApi from "../components/CocktailsApi";
 
-const addForm = document.forms[".form"];
-const saveButton = document.querySelector(".form__save-button");
 const addCocktailBtn = document.querySelector(".nav__button");
 const addModal = new AddCardForm("#add-card-modal", handleAddFormSubmit);
 
@@ -57,8 +55,7 @@ function handleAddFormSubmit({
       ingredient4,
     })
     .then((data) => {
-      const newCard = createCard(data);
+      const newCard = createCard(data.item);
       cardSection.addItem(newCard);
-      addForm.resetForm();
     });
 }

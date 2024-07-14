@@ -5,7 +5,7 @@ export default class AddCardForm {
     this.handleAddFormSubmit = handleAddFormSubmit;
     this._closeButton = document.querySelector(".modal__close-button");
     this._saveButton = document.querySelector(".form__save-button");
-    this._inputList = document.querySelector(".form__input");
+    this._inputList = document.querySelectorAll(".form__input");
   }
 
   open() {
@@ -18,9 +18,9 @@ export default class AddCardForm {
 
   _getInputValues() {
     const cardData = {};
+    console.log(this._inputList);
     this._inputList.forEach((input) => {
       cardData[input.name] = input.value;
-      cardData[input.ingredient1] = input.value;
     });
 
     return cardData;
@@ -33,9 +33,11 @@ export default class AddCardForm {
     this._saveButton.addEventListener("click", () => {
       console.log(this._getInputValues());
     });
-    this.form.addEventListener("click", (evt) => {
+    this.form.addEventListener("submit", (evt) => {
       evt.preventDefault();
       this.handleAddFormSubmit(this._getInputValues());
+      this.close();
+      this.resetForm();
     });
   }
 
