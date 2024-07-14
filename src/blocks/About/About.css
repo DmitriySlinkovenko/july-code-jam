@@ -4,6 +4,7 @@
 
 .about__container {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1440px;
   justify-content: space-between;
   background-color: transparent;
@@ -62,18 +63,18 @@
   height: 175px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 915px) {
   .about__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
   }
 
   .about__card {
-    width: 175px;
+    max-width: 200px;
   }
+}
 
+@media screen and (max-width: 480px) {
   .about__text {
     font-size: 20px;
   }

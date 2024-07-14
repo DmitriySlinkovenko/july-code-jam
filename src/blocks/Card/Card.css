@@ -20,6 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  justify-content: center;
 }
 
 .card__container-heading {
@@ -187,8 +188,8 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+}
+
 @media screen and (max-width: 480px) {
-  .card__container {
-    justify-content: center;
-  }
 }

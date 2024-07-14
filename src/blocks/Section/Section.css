@@ -53,6 +53,16 @@
   animation-delay: 0.5s;
 }
 
+@media screen and (max-width: 915px) {
+  .section__heading {
+    height: 100%;
+  }
+
+  .section__text {
+    font-size: 1.3rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .section__heading {
     height: 100%;
