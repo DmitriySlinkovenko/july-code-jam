@@ -30,9 +30,12 @@ export default class AddCardForm {
     this._closeButton.addEventListener("click", () => {
       this.close();
     });
-    this.form.addEventListener("submit", (evt) => {
+    this._saveButton.addEventListener("click", () => {
+      console.log(this._getInputValues());
+    });
+    this.form.addEventListener("click", (evt) => {
       evt.preventDefault();
-      this.handleAddFormSubmit(_getInputValues());
+      this.handleAddFormSubmit(this._getInputValues());
     });
   }
 
