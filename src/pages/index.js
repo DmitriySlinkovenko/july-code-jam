@@ -125,5 +125,6 @@ function handleAddFormSubmit({
     .then((data) => {
       const newCard = createCard(data.item);
       cardSection.addItem(newCard);
-    });
+    })
+    .catch((err) => console.error("Error adding new card", err));
 }
